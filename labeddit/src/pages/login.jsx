@@ -12,7 +12,7 @@ export function Login() {
                 <Input placeholder={"E-mail"} />
                 <Input placeholder={"Senha"} />
                 <div className="flex flex-col gap-3 mt-10">
-                    <Buttonfade />
+                    <Buttonfade text={"Continuar"} />
                     <div className="h-px bg-gradient-to-r from-[#FF6489] to-[#F9B24E]" />
                     <button className="border-orange-500 border py-2 text-orange-500 font-semibold rounded-full">Crie uma conta!</button>
                 </div>
