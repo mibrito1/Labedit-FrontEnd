@@ -3,3 +3,8 @@ export function Buttonfade({ text }) {
         <button className="bg-gradient-to-r from-[#FF6489] to-[#F9B24E] py-2 text-white rounded-full font-semibold tracking-wide w-80">{text}</button>
     )
 }
+export function ButtonPost({ text }) {
+    return (
+        <button className="bg-gradient-to-r from-[#FF6489] to-[#F9B24E] py-2 text-white rounded-xl font-semibold tracking-wide ">{text}</button>
+    )
+}

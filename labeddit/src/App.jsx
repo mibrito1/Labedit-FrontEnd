@@ -1,10 +1,9 @@
-import { Register } from "./pages/register"
+import { Router } from "./router/routes"
 function App() {
   return (
     <>
-      <Register />
+      <Router />
     </>
   )
 }
-
 export default App
