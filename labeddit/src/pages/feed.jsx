@@ -2,9 +2,11 @@ import { ButtonPost } from "../components/buttonFade";
 import { Header } from "../components/header";
 import { PostBox } from "../components/postBox";
 import { TextArea } from "../components/textArea";
+import { useSecure } from "../hooks/useSecure";
 
 
 export function Feed() {
+    useSecure()
     return (
         <>
             <Header />
