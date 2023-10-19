@@ -17,3 +17,7 @@ export async function register(body) {
         return error.response.data
     }
 }
+export function logout() {
+    localStorage.removeItem("token")
+
+}
