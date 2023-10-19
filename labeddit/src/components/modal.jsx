@@ -2,10 +2,8 @@ import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
-export default function Modal({ open, onClose }) {
-
+export default function Modal({ open, onClose, mensageError }) {
     const cancelButtonRef = useRef(null)
-
     return (
         <Transition.Root show={open} as={Fragment}>
             <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={onClose}>
@@ -44,7 +42,7 @@ export default function Modal({ open, onClose }) {
                                             </Dialog.Title>
                                             <div className="mt-2">
                                                 <p className="text-sm text-gray-500">
-                                                    O criador não pode curtir seu proprio post!
+                                                    {mensageError ? mensageError : "O criador não pode curtir seu proprio post!"}
                                                 </p>
                                             </div>
                                         </div>

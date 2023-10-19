@@ -21,7 +21,6 @@ export function Feed() {
             }
         }
         const res = await getPost(header)
-        console.log(res)
         setPosts(res || [])
     }
     async function createPosts(e) {
@@ -35,7 +34,7 @@ export function Feed() {
             content: content
         }
         const res = await createPost(body, header)
-        console.log(res)
+        setContent("")
         getPosts()
     }
     async function likeDislikePosts(e, postId, value) {
@@ -49,9 +48,7 @@ export function Feed() {
             like: value
         }
         const res = await likeDislikePost(body, header, postId)
-        console.log(res)
         if (res === "Voce não tem autorização") {
-            console.log("aaaaaaaa")
             setDonoDoPost(true)
             setModalAberto(true)
             return
