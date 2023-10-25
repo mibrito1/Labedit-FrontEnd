@@ -2,7 +2,15 @@
 
 <img src="https://github.com/mibrito1/Labedit-FrontEnd/assets/127511385/b1ce583c-ba66-4e77-967b-65beea8b9f59" width="600px" />
 
-Este projeto ...
+###
+
+A Labeddit foi criada como ultimo projeto de estudo do Bootcamp da Labenu. 
+
+Trata-se de um projeto FullStack que tem como finalide criar uma rede social e promover conexão e interação entre pessoas.
+Quem se cadastrar no aplicativo poderá, além de criar publicações, também interagir nelas, fazendo comentarios e deixando seus likes ou dislikes.
+
+Por se tratar de uma entrega final de curso foi uma oportunidade de reunir todo o conhecidomento adquirido de BackEnd e FrontEnd.
+
 
 ## Funcionalidades do Projeto
 - Login: Permite a autenticação dos usuários.
